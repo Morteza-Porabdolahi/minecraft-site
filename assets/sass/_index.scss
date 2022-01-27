@@ -38,6 +38,7 @@ $color-dark : #333;
             &:hover {
                 text-decoration: none;
                 color: $color-primary;
+                border: 1px solid $color-primary;
                 background-color: $color-seconday
             }
         }
@@ -73,6 +74,7 @@ $color-dark : #333;
         font-weight: bold;
         color: $color-seconday;
         margin-bottom: 4rem;
+        border-right: 5px solid $color-white;
     }
 
     &-btn {
@@ -123,6 +125,7 @@ $color-dark : #333;
         }
         &:focus::placeholder{
             color: $color-seconday;
+            transition: all .3s;
         }
     }
     &-btn{
@@ -247,8 +250,8 @@ $color-dark : #333;
             text-transform: uppercase;
             font-weight: bold;
             background-size: 200% auto;
-            background-clip: text;
             text-align: center;
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: #fff;
@@ -258,7 +261,6 @@ $color-dark : #333;
                     #ff1361 67%,
                     #fff800 100%);
             animation: text 2s linear infinite;
-
             @keyframes text {
                 to {
                     background-position: 200% center;
@@ -338,11 +340,28 @@ $color-dark : #333;
 .footer-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 7rem 0;
+    padding: 6rem 0;
     background-color: rgba($color: #000000, $alpha: .9);
-
+    .search-history{
+        &-header h5{
+            color: $color-seconday;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        &-header{
+            margin-bottom: 1rem;
+        }
+        .history-list-item{
+            color: $color-seconday;
+        }
+        .history-list-item::marker{
+            color: rgb(114, 114, 114);
+        }
+    }
     .copyright {
+        margin-top: 2rem;
         &-text {
             color: $color-white;
             font-size: 1rem;
