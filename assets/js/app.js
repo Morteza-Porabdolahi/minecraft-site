@@ -45,21 +45,3 @@ function showSlides() {
   texts[index - 1].style.display = 'block';
   setTimeout(showSlides, 7000);
 }
-
-let searchBtn = document.getElementById('search-btn');
-let searchInput = document.getElementById('search-input');
-let lists = document.getElementsByClassName('history-list-item');
-let x = 0;
-x--;
-searchBtn.addEventListener('click', function () {
-  if (!isNaN(searchInput.value)) {
-    return;
-  }
-  x++;
-  if (x >= lists.length) {
-    x = 0;
-    return;
-  }
-  lists[x].innerHTML = searchInput.value;
-  console.log(x)
-});
