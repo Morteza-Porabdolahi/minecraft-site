@@ -52,13 +52,14 @@ let lists = document.getElementsByClassName('history-list-item');
 let x = 0;
 x--;
 searchBtn.addEventListener('click', function () {
-  if(!isNaN(searchInput.value)){
+  if (!isNaN(searchInput.value)) {
     return;
   }
   x++;
   if (x >= lists.length) {
     x = 0;
-    lists[x].innerHTML = '';
+    return;
   }
   lists[x].innerHTML = searchInput.value;
+  console.log(x)
 });

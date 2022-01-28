@@ -5,13 +5,27 @@ $color-tertiary : #fa004b;
 $color-white : #e3e2df;
 $color-dark : #333;
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: $color-dark;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color-seconday;
+    border-radius: 15px;
+}
+
 .navbar-container {
     margin-top: 1.2rem;
 }
 
-.header-icon-media{
+.header-icon-media {
     display: none;
 }
+
 .up-row-header {
     display: flex;
     justify-content: space-around;
@@ -37,9 +51,9 @@ $color-dark : #333;
 
             &:hover {
                 text-decoration: none;
-                color: $color-primary;
-                border: 1px solid $color-primary;
-                background-color: $color-seconday
+                color: #ffced9;
+                border: 1px solid #FBC7D4;
+                background-color: #F31D31;
             }
         }
     }
@@ -107,11 +121,13 @@ $color-dark : #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    .input-section{
+
+    .input-section {
         position: relative;
         width: calc(100% / 3);
     }
-    &-input{
+
+    &-input {
         border: none;
         outline: none;
         border-bottom: 1px solid $color-tertiary;
@@ -120,15 +136,18 @@ $color-dark : #333;
         color: $color-seconday;
         background-color: #131313;
         position: relative;
-        &:focus + button{
+
+        &:focus+button {
             background-color: $color-tertiary;
         }
-        &:focus::placeholder{
+
+        &:focus::placeholder {
             color: $color-seconday;
             transition: all .3s;
         }
     }
-    &-btn{
+
+    &-btn {
         position: absolute;
         right: 0;
         bottom: 3px;
@@ -140,7 +159,8 @@ $color-dark : #333;
         font-weight: bold;
         padding: .3rem .3rem;
         transition: all .3s;
-        &:focus{
+
+        &:focus {
             outline: none;
             border: none;
         }
@@ -152,9 +172,11 @@ $color-dark : #333;
     display: flex;
     padding: 3rem 1rem;
     width: 100%;
+
     .game-mod-description {
         width: calc(100% - 30%);
         margin-left: 1rem;
+
         &-header h4 {
             color: $color-seconday;
             background-color: $color-tertiary;
@@ -186,9 +208,11 @@ $color-dark : #333;
 
     .game-mod-images {
         width: 30%;
+
         .images-section {
             position: relative;
             transition: all .3s;
+
             &:hover {
                 transform: translateY(-.4rem);
             }
@@ -261,6 +285,7 @@ $color-dark : #333;
                     #ff1361 67%,
                     #fff800 100%);
             animation: text 2s linear infinite;
+
             @keyframes text {
                 to {
                     background-position: 200% center;
@@ -344,24 +369,30 @@ $color-dark : #333;
     align-items: center;
     padding: 6rem 0;
     background-color: rgba($color: #000000, $alpha: .9);
-    .search-history{
-        &-header h5{
+
+    .search-history {
+        &-header h5 {
             color: $color-seconday;
             font-size: 1.5rem;
             font-weight: bold;
         }
-        &-header{
+
+        &-header {
             margin-bottom: 1rem;
         }
-        .history-list-item{
+
+        .history-list-item {
             color: $color-seconday;
         }
-        .history-list-item::marker{
+
+        .history-list-item::marker {
             color: rgb(114, 114, 114);
         }
     }
+
     .copyright {
         margin-top: 2rem;
+
         &-text {
             color: $color-white;
             font-size: 1rem;
