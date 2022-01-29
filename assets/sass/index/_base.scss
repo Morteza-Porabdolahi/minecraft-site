@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif!important;
+}
+.pointer{
+    cursor: pointer;
+}
+.active{
+    background-color: #fa004b!important;
+}
+.flex{
+    display: flex!important;
+}
+p{
+    text-align: center;
+    padding: 0 .4rem;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
