@@ -1,52 +1,365 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/reset-css/reset.css">
-		<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/plugins/plugins.css">
-		<title></title>
-	</head>
-	<body>
-		<header class="header">
-			<section class="header-container">
-				<section class="up-row-header">
-					<section class="image-container">
-						<img src="../img/delta.png" alt="logo" class="img-fluid logo pointer">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset-css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/plugins/plugins.css">
+	<title></title>
+</head>
+
+<body>
+	<header class="header">
+		<section class="header-container">
+			<section class="up-row-header">
+				<section class="image-container">
+					<img src="../img/delta.png" alt="logo" class="img-fluid logo pointer">
+				</section>
+				<section class="navbar-container">
+					<nav>
+						<ul class="header-list">
+							<li class="header-list-item">
+								<a href="../../index.html" class="header-list-item-link">HOME</a>
+							</li>
+							<li class="header-list-item">
+								<a href="plugins.html" class="header-list-item-link">PLUGINS</a>
+							</li>
+							<li class="header-list-item">
+								<a href="#" class="header-list-item-link">SHOP</a>
+							</li>
+							<li class="header-list-item">
+								<a href="#" class="header-list-item-link">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+					<section class="header-icon-media">
+						<a href="#" class="header-list-item-link" id="burger-menu"><i
+								class="fas fa-bars burger"></i></a>
 					</section>
-					<section class="navbar-container">
-						<nav>
-							<ul class="header-list">
-								<li class="header-list-item">
-									<a href="../../index.html" class="header-list-item-link">HOME</a>
-								</li>
-								<li class="header-list-item">
-									<a href="plugins.html" class="header-list-item-link">PLUGINS</a>
-								</li>
-								<li class="header-list-item">
-									<a href="#" class="header-list-item-link">SHOP</a>
-								</li>
-								<li class="header-list-item">
-									<a href="#" class="header-list-item-link">CONTACT</a>
-								</li>
-							</ul>
-						</nav>
-						<section class="header-icon-media">
-							<a href="#" class="header-list-item-link" id="burger-menu"><i class="fas fa-bars burger"></i></a>
+				</section>
+			</section>
+			<section class="down-row-header">
+				<h5 class="down-row-header-change-text" id="txt-rotate"></h5>
+				<button class="down-row-header-btn pointer" id="copy-ip">Buy Account</button>
+			</section>
+		</section>
+	</header>
+	<main class="main">
+		<section class="main-container">
+			<section class="slider">
+				<section class="slider-container">
+					<section class="pointer" id="next-btn">
+						<a href="#" class="next-icon" onclick="return false;"><i class="fas fa-angle-right"></i></a>
+					</section>
+					<ul class="slider-body">
+						<li class="slider-page">
+							<section class="slider-page-img pointer">
+								<img src="../img/slider2.jpg">
+							</section>
+							<section class="slider-page-content">
+								<h5>proident, sunt in culpa qui officia deserunt mollim id est laborum.</h5>
+								<p>ure dolor in reprehenderit in voluptate velit essecillum dolore eufugianulla
+									pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id esaborum.</p>
+								<button class="buy-plugin-btn">Buy Plugin Now <i
+										class="fas fa-shopping-cart"></i></button>
+							</section>
+						</li>
+						<li class="slider-page">
+							<section class="slider-page-img pointer">
+								<img src="../img/slider.jpg">
+							</section>
+							<section class="slider-page-content">
+								<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+								<button class="buy-plugin-btn">Buy Plugin Now <i
+										class="fas fa-shopping-cart"></i></button>
+							</section>
+						</li>
+						<li class="slider-page">
+							<section class="slider-page-img pointer">
+								<img src="../img/slider3.jpg">
+							</section>
+							<section class="slider-page-content">
+								<h5>quis nostrud exercitation ullamco laboris nisi ut aliquipea commodo</h5>
+								<p>exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+								<button class="buy-plugin-btn">Buy Plugin Now <i
+										class="fas fa-shopping-cart"></i></button>
+							</section>
+						</li>
+					</ul>
+					<section class="pointer" id="prev-btn">
+						<a href="#" class="prev-icon" onclick="return false;"><i class="fas fa-angle-left"></i></a>
+					</section>
+					<section class="dots">
+						<span class="dot active"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</section>
+				</section>
+			</section>
+			<section class="shop-section">
+				<section class="category">
+					<section class="category-container">
+						<section class="categories">
+							<h5>All Categories</h5>
+							<section class="accordion" id="accordionExample">
+								<section class="card category-child">
+									<section id="headingOne" class="card-header category-child-header">
+										<h6>
+											<button class="btn" type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												Category 1 <i class="fas fa-angle-right"></i>
+											</button>
+										</h6>
+									</section>
+									<section id="collapseOne" class="collapse category-child-collapse"
+										aria-labelledby="headingOne" data-parent="#accordionExample">
+										<section class="card-body category-child-collapse-body">
+											<a href="#">
+												<p>Plugins</p>
+											</a>
+											<a href="#">
+												<p>Plugins</p>
+											</a>
+											<a href="#">
+												<p>Plugins</p>
+											</a>
+										</section>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingTwo">
+									<h6 class="mb-0">
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											Category 2 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingThree">
+									<h6>
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
+											Category 3 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseThree" class="collapse" aria-labelledby="headingThree"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingFour">
+									<h6>
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseFour" aria-expanded="false"
+											aria-controls="collapseFour">
+											Category 4 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseFour" class="collapse" aria-labelledby="headingFour"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingFive">
+									<h6>
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseFive" aria-expanded="false"
+											aria-controls="collapseFive">
+											Category 5 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseFive" class="collapse" aria-labelledby="headingFive"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingSix">
+									<h6>
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseSix" aria-expanded="false"
+											aria-controls="collapseSix">
+											Category 6 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseSix" class="collapse" aria-labelledby="headingSix"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+							<section class="card category-child">
+								<section class="card-header category-child-header" id="headingSeven">
+									<h6 class="mb-0">
+										<button class="btn collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseSeven" aria-expanded="false"
+											aria-controls="collapseSeven">
+											Category 7 <i class="fas fa-angle-right"></i>
+										</button>
+									</h6>
+								</section>
+								<section id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+									data-parent="#accordionExample">
+									<section class="card-body category-child-collapse-body">
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+										<a href="#">
+											<p>Plugins</p>
+										</a>
+									</section>
+								</section>
+							</section>
+						</section>
+						<section class="shop-search-section">
+							<h4>Search Section</h4>
+							<input type="text" class="form-control shop-search-section-input" placeholder="Search...">
+							<button class="shop-search-section-btn btn btn-block my-3">Search</button>
 						</section>
 					</section>
 				</section>
-				<section class="down-row-header">
-					<h5 class="down-row-header-change-text" id="txt-rotate"></h5>
-					<button class="down-row-header-btn pointer" id="copy-ip">Buy Account</button>
+				<section class="main-shop">
+					<section class="main-shop-container">
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+						<section class="card card-shop pointer text-white bg-dark">
+							<img src="../img/card-shop.png" class="card-shop-img">
+							<section class="card-body">
+								<h5>Product Name</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p class="price">Price : 30,000T</p>
+								<button class="btn btn-block">Buy Now</button>
+							</section>
+						</section>
+					</section>
 				</section>
 			</section>
-		</header>
-		<script type="text/javascript" src="../fontawesome/js/all.min.js"></script>
-		<script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../js/plugins.js"></script>
-	</body>
+		</section>
+	</main>
+	<script type="text/javascript" src="../fontawesome/js/all.min.js"></script>
+	<script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/plugins.js"></script>
+</body>
+
 </html>

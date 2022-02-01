@@ -10,6 +10,12 @@
 .active{
     background-color: #fa004b!important;
 }
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
 .flex{
     display: flex!important;
 }

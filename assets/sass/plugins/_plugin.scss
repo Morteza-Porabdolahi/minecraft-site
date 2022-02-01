@@ -5,6 +5,19 @@ $color-tertiary : #00A8C8;
 $color-white : #e3e2df;
 $color-dark : #333;
 
+
+@mixin btn-styles ($font-size) {
+    outline: none;
+    font-size: $font-size;
+    font-weight: bold;
+    border-radius: .4rem;
+    background-color: transparent;
+    color: $color-seconday;
+    border: 1px solid $color-tertiary;
+    transition: all .4s;
+    cursor: pointer;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -53,7 +66,6 @@ body::-webkit-scrollbar-thumb {
             &:hover {
                 text-decoration: none;
                 color: $color_seconday;
-                border: 1px solid #FBC7D4;
                 background-color: #00A8C8;
             }
         }
@@ -93,25 +105,335 @@ body::-webkit-scrollbar-thumb {
     }
 
     &-btn {
-        outline: none;
         padding: 1.5rem 3.5rem;
-        font-size: 1.3rem;
-        font-weight: bold;
-        border-radius: .4rem;
-        background-color: transparent;
-        color: $color-seconday;
-        border: 1px solid $color-tertiary;
-        transition: all .4s;
+        @include btn-styles (1.3rem);
 
         &:hover {
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            padding: 1.3rem 3.2rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px18px 36px -18px inset;
+            transform: scale(.98);
             background-color: $color-seconday;
             color: $color-tertiary;
         }
 
         &:focus {
             outline: none;
+        }
+    }
+}
+
+.main-container {
+    .shop-section {
+        display: flex;
+        width: 100%;
+
+        .category {
+            width: 25%;
+
+            .category-container {
+                background-color: #272424;
+                padding: 0rem 1.2rem;
+                height: 100%;
+
+                .shop-search-section {
+                    margin-top: 4rem;
+
+                    &-btn {
+                        box-shadow: none;
+                        background-color: transparent;
+                        color: $color-white;
+                        border: 1px solid $color-white;
+                        position: relative;
+
+                        &:hover:before {
+                            width: 100%;
+                        }
+
+                        &::before {
+                            transition: all .3s;
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba($color-seconday, 0.1);
+                        }
+                    }
+
+                    h4 {
+                        font-size: 1.4rem;
+                        padding: 1rem 0;
+                        color: $color-white;
+                    }
+
+                    &-input {
+                        background-color: transparent;
+                        border: 1px solid $color-dark;
+                        color: $color-white;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                            border-color: $color-seconday;
+
+                            &::placeholder {
+                                transition: all .3s;
+                                color: $color-seconday;
+                            }
+                        }
+                    }
+                }
+
+                .categories {
+                    h5 {
+                        color: $color-white;
+                        padding: 2rem 0;
+                        font-size: 1.5rem;
+                        border-bottom: 1px solid #6C6B69;
+                    }
+
+                    .category-child {
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: 1px solid $color-white;
+
+                        &-header {
+                            background-color: transparent;
+                            border: none;
+
+                            button {
+                                background-color: transparent;
+                                color: $color-white;
+                                box-shadow: none;
+                            }
+                        }
+
+                        &-collapse-body {
+                            padding-top: 0;
+                            padding-bottom: 1rem;
+
+                            a {
+                                p {
+                                    color: $color-white;
+                                    padding: .5rem 0;
+                                }
+                            }
+                        }
+
+                        .category-header {
+                            border: none;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-shop {
+            width: 75%;
+
+            .main-shop-container {
+                background-color: #2b2b2b;
+                height: 100%;
+                padding: 2rem 2rem;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+
+                .card {
+                    max-height: 400px;
+                    margin: .5rem 1rem;
+                    transition: all .3s;
+
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+
+                    width: 17.5rem;
+                    text-align: center;
+                    padding: .6rem .6rem;
+                    background-color: #2C2C2C;
+
+                    .card-shop-img {
+                        position: relative;
+                    }
+
+                    .card-body {
+                        padding: 1.3rem 0;
+
+                        button {
+                            background-color: transparent;
+                            color: $color-white;
+                            border: 1px solid $color-white;
+                            padding: .6rem 0;
+                            transition: all .3s;
+                            box-shadow: none;
+
+                            &:hover {
+                                background-color: $color-dark;
+                                transform: scale(.98);
+                            }
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            margin-bottom: 1.8rem;
+                            color: $color-white;
+                        }
+
+                        .price {
+                            font-weight: bold;
+                            color: $color-seconday;
+                        }
+
+                        h5 {
+                            color: $color-white;
+                            font-size: 1.3rem;
+                            margin-bottom: 1rem;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-container {
+        overflow: hidden;
+        padding: 2rem .5rem;
+        background-color: #282828;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .dots {
+            display: flex;
+            margin-top: 1.5rem;
+
+            .dot {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid $color-seconday;
+                margin-right: 1rem;
+            }
+        }
+
+        .next-icon {
+            color: $color-seconday;
+            font-size: 2rem;
+            margin-right: 1rem;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-tertiary;
+            }
+
+            &:active {
+                transform: scale(.7);
+            }
+        }
+
+        .prev-icon {
+            color: $color-seconday;
+            font-size: 2rem;
+            margin-left: .8rem;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-tertiary;
+            }
+
+            &:active {
+                transform: scale(.7);
+            }
+
+        }
+
+        .slider-body {
+            display: flex;
+            align-items: center;
+            width: 304%;
+
+            .slider-page {
+                display: flex;
+                width: 100%;
+                padding: 0 3rem;
+
+                .slider-page-content {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 2rem;
+                    margin-left: 1rem;
+
+                    .buy-plugin-btn {
+                        padding: 1rem 3rem;
+                        margin-top: 2.5rem;
+                        @include btn-styles(1rem);
+
+                        &:hover {
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                            transform: scale(.98);
+                            background-color: $color-seconday;
+                            color: $color-tertiary;
+                        }
+                    }
+
+                    p {
+                        color: #898c8a;
+                        font-size: 1rem;
+                        margin-top: .5rem;
+                    }
+
+                    h5 {
+                        color: $color-seconday;
+                        font-size: 1.7rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .slider-page-img {
+                    width: 50%;
+                    position: relative;
+                    transition: all .3s;
+
+                    &:hover {
+                        transform: translateY(-3px);
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        background-color: rgba(0, 0, 0, .5);
+                        border-radius: .5rem;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: .5rem;
+                    }
+                }
+            }
         }
     }
 }

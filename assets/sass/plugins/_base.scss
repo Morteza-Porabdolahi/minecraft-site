@@ -8,15 +8,22 @@
     cursor: pointer;
 }
 .active{
-    background-color: #fa004b!important;
+    border : 1px solid #C2ECF1;
+    background-color: #00A8C8;
 }
 .flex{
     display: flex!important;
 }
+a{
+    text-decoration: none;
+    transition: all .3s;
+    &:hover{
+        text-decoration: none;
+    }
+}
 p{
-    text-align: center;
     padding: 0 .4rem;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,a,p{
     text-align: center;
 }

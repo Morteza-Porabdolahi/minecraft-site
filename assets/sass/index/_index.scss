@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb {
 
 .search-section {
     padding: 3rem 0;
-    background-color: #131313;
+    background-color: #1a1a1d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         padding: .4rem .2rem;
         color: $color-seconday;
-        background-color: #131313;
+        background-color: #1a1a1d;
         position: relative;
 
         &:focus+button {
@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .game-mods-section {
-    background-color: #333;
+    background-color: #263238;
     display: flex;
     padding: 3rem 1rem;
     width: 100%;
