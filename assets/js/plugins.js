@@ -59,4 +59,19 @@ $(document).ready(function () {
         prevSlide();
     });
 });
-//-----------------------------//
+//------------- Category Dropdown ----------------//
+$('.category-toggle').click(function (e) { 
+    var hasClass = $(this).hasClass('category-toggle-active');
+    $('.category-toggle').removeClass('category-toggle-active');
+    $('.category-toggle').children('.angle').addClass('fa-angle-right');
+    $('.category-toggle').children('.angle').removeClass('fa-angle-down');
+    if(hasClass){
+        $(this).removeClass('category-toggle-active');
+        $(this).children('.angle').addClass('fa-angle-right');
+        $(this).children('.angle').removeClass('fa-angle-down');
+    }else{
+        $(this).addClass('category-toggle-active');
+        $(this).children('.angle').removeClass('fa-angle-right');
+        $(this).children('.angle').addClass('fa-angle-down');
+    }
+});
