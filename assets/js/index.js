@@ -49,3 +49,15 @@ $(document).ready(function() {
         setTimeout(showSlides, 7000);
     }
 });
+var backToTopButton = document.getElementById('scroll-top-button');
+window.onscroll = function styleButton () {
+    if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70){
+        backToTopButton.style.display = 'block';
+    }else{
+        backToTopButton.style.display = 'none';
+    }
+}
+backToTopButton.addEventListener('click',function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})

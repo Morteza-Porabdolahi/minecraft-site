@@ -7,11 +7,26 @@
 	<title>Plugins</title>
 	<link rel="icon" href="../img/delta.png">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../js/jquery-ui-1.13.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/jquery-ui-1.13.1/jquery-ui.theme.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset-css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/plugins/plugins.css">
 </head>
 
 <body>
+	<!-- Start Buy Account Modal  -->
+	
+	<!-- End Buy Account Modal  -->
+	<!-- Scroll To Top -->
+	<section class="scroll-top">
+		<section class="scroll-top-container" id="scroll-top-button">
+			<span class="scroll-top-icon pointer">
+				<i class="zmdi zmdi-long-arrow-up"></i>
+			</span>
+		</section>
+	</section>
+	<!-- End Scroll To Top -->
+
 	<header class="header">
 		<section class="header-container">
 			<section class="up-row-header">
@@ -44,7 +59,7 @@
 			</section>
 			<section class="down-row-header">
 				<h5 class="down-row-header-change-text" id="txt-rotate"></h5>
-				<button class="down-row-header-btn pointer" id="copy-ip">Buy Account</button>
+				<button class="down-row-header-btn pointer" id="copy-ip" data-toggle="modal" data-target=".account-modal">Buy Account</button>
 			</section>
 		</section>
 	</header>
@@ -69,7 +84,7 @@
 									pariatur. Excepteur sint occaecat cupidatat non
 									proident, sunt in culpa qui officia deserunt mollit anim id esaborum.</p>
 								<button class="buy-plugin-btn">
-									Buy Plugin Now 
+									Buy Plugin Now
 									<i class="zmdi zmdi-shopping-cart"></i>
 								</button>
 							</section>
@@ -83,7 +98,8 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								<button class="buy-plugin-btn">Buy Plugin Now <i class="zmdi zmdi-shopping-cart"></i></button>
+								<button class="buy-plugin-btn">Buy Plugin Now <i
+										class="zmdi zmdi-shopping-cart"></i></button>
 							</section>
 						</li>
 						<li class="slider-page">
@@ -95,7 +111,8 @@
 								<p>exercitation ullamco laboris nisi ut aliquip ex ea commodo
 									consequat. Duis aute irure dolor in reprehenderit in voluptate
 									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
-								<button class="buy-plugin-btn">Buy Plugin Now<i class="zmdi zmdi-shopping-cart"></i></button>
+								<button class="buy-plugin-btn">Buy Plugin Now<i
+										class="zmdi zmdi-shopping-cart"></i></button>
 							</section>
 						</li>
 					</ul>
@@ -203,7 +220,7 @@
 					<section class="category-section-search">
 						<h2 class="category-section-search-header">Search Section</h2>
 						<input type="text" class="form-control category-section-search-input" placeholder="Search...">
-						<button class="btn btn-block category-section-search-button"> 
+						<button class="btn btn-block category-section-search-button">
 							Search
 							<i class="zmdi zmdi-search ml-1"></i>
 						</button>
@@ -216,7 +233,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price discount">Price : 30,000T <sup class="badge badge-danger">50%</sup>
 									</p>
 									<p class="new-price">New Price : 15,000T <sup class="badge badge-success">New</sup>
@@ -228,7 +246,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price">Price : 30,000T</p>
 									<button class="btn btn-block m-t-2">Buy Now</button>
 								</section>
@@ -237,7 +256,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price">Price : 30,000T</p>
 									<button class="btn btn-block">Buy Now</button>
 								</section>
@@ -246,7 +266,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price">Price : 30,000T</p>
 									<button class="btn btn-block">Buy Now</button>
 								</section>
@@ -255,7 +276,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price">Price : 30,000T</p>
 									<button class="btn btn-block">Buy Now</button>
 								</section>
@@ -264,7 +286,8 @@
 								<img src="../img/card-shop.png" class="card-shop-img">
 								<section class="card-body">
 									<h5>Product Name</h5>
-									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+										do eiusmod</p>
 									<p class="price">Price : 30,000T</p>
 									<button class="btn btn-block">Buy Now</button>
 								</section>
@@ -273,23 +296,23 @@
 						<section class="navigate">
 							<nav aria-label="Page navigation example">
 								<ul class="pagination navigation">
-								  <li class="page-item">
-									<a class="page-link bg-dark text-white" href="#" aria-label="Previous">
-									  <span aria-hidden="true">&laquo;</span>
-									  <span class="sr-only">Previous</span>
-									</a>
-								  </li>
-								  <li class="page-item"><a class="page-link bg-dark text-white" href="#">1</a></li>
-								  <li class="page-item"><a class="page-link bg-dark text-white" href="#">2</a></li>
-								  <li class="page-item"><a class="page-link bg-dark text-white" href="#">3</a></li>
-								  <li class="page-item">
-									<a class="page-link bg-dark" href="#" aria-label="Next">
-									  <span aria-hidden="true" class="text-white">&raquo;</span>
-									  <span class="sr-only">Next</span>
-									</a>
-								  </li>
+									<li class="page-item">
+										<a class="page-link bg-dark text-white" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+											<span class="sr-only">Previous</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link bg-dark text-white" href="#">1</a></li>
+									<li class="page-item"><a class="page-link bg-dark text-white" href="#">2</a></li>
+									<li class="page-item"><a class="page-link bg-dark text-white" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link bg-dark" href="#" aria-label="Next">
+											<span aria-hidden="true" class="text-white">&raquo;</span>
+											<span class="sr-only">Next</span>
+										</a>
+									</li>
 								</ul>
-							  </nav>
+							</nav>
 						</section>
 					</section>
 				</section>
@@ -305,17 +328,20 @@
 					</section>
 					<section class="social-media-section-other-icons">
 						<secion class="instagram">
-							<a class="social-media-icons instagram-icon pointer" href="https://www.instagram.com/mr._.hichy/" target="_blank">
+							<a class="social-media-icons instagram-icon pointer"
+								href="https://www.instagram.com/mr._.hichy/" target="_blank">
 								<i class="zmdi zmdi-instagram"></i>
 							</a>
 						</secion>
 						<section class="twitch">
-							<a class="social-media-icons twitch-icon pointer" href="https://www.twitch.tv/mrhichy" target="_blank">
+							<a class="social-media-icons twitch-icon pointer" href="https://www.twitch.tv/mrhichy"
+								target="_blank">
 								<i class="zmdi zmdi-twitch"></i>
 							</a>
 						</section>
 						<section class="youtube">
-							<a class="social-media-icons youtube-icon pointer" href="https://www.youtube.com/mrhichy" target="_blank">
+							<a class="social-media-icons youtube-icon pointer" href="https://www.youtube.com/mrhichy"
+								target="_blank">
 								<i class="zmdi zmdi-youtube-play"></i>
 							</a>
 						</section>
@@ -334,7 +360,8 @@
 		</section>
 	</footer>
 	<!-- End Footer -->
-	<script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/plugins.js"></script>
 </body>
