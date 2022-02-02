@@ -63,15 +63,15 @@ $(document).ready(function () {
 $('.category-toggle').click(function (e) { 
     var hasClass = $(this).hasClass('category-toggle-active');
     $('.category-toggle').removeClass('category-toggle-active');
-    $('.category-toggle').children('.angle').addClass('fa-angle-right');
-    $('.category-toggle').children('.angle').removeClass('fa-angle-down');
+    $('.category-toggle').children('.angle').addClass('zmdi-chevron-right');
+    $('.category-toggle').children('.angle').removeClass('zmdi-chevron-down');
     if(hasClass){
         $(this).removeClass('category-toggle-active');
-        $(this).children('.angle').addClass('fa-angle-right');
-        $(this).children('.angle').removeClass('fa-angle-down');
+        $(this).children('.angle').addClass('zmdi-chevron-right');
+        $(this).children('.angle').removeClass('zmdi-chevron-down');
     }else{
         $(this).addClass('category-toggle-active');
-        $(this).children('.angle').removeClass('fa-angle-right');
-        $(this).children('.angle').addClass('fa-angle-down');
+        $(this).children('.angle').removeClass('zmdi-chevron-right');
+        $(this).children('.angle').addClass('zmdi-chevron-down');
     }
 });
