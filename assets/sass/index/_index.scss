@@ -154,12 +154,11 @@ body::-webkit-scrollbar-thumb {
         border: none;
         outline: none;
         color: $color-seconday;
-        border-radius: 20px;
+        border-radius: 10px;
         background: none;
         font-weight: bold;
         padding: .3rem .3rem;
         transition: all .3s;
-
         &:focus {
             outline: none;
             border: none;

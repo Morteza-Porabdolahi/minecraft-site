@@ -69,9 +69,15 @@ $('.category-toggle').click(function (e) {
         $(this).removeClass('category-toggle-active');
         $(this).children('.angle').addClass('zmdi-chevron-right');
         $(this).children('.angle').removeClass('zmdi-chevron-down');
+        $('.category-section-search').css({
+            'padding' : '6.55rem 1rem',
+        });
     }else{
         $(this).addClass('category-toggle-active');
         $(this).children('.angle').removeClass('zmdi-chevron-right');
         $(this).children('.angle').addClass('zmdi-chevron-down');
+        $('.category-section-search').css({
+            'padding' : '1.2rem 1rem',
+        });
     }
 });
