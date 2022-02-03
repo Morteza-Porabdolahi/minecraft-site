@@ -47,8 +47,7 @@ body{
         display: flex;
         justify-content: center;
         &-dialog{
-            background-color: $color-dark;
-            border-radius: 8px;
+            // border-radius: 8px;
             &-header{
                 .modal-header{
                     padding: .7rem 0;
