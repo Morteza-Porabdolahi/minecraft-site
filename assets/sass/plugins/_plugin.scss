@@ -183,6 +183,7 @@ body {
     margin-top: 10rem;
 
     &-change-text {
+        padding: 0 1rem;
         font-size: 4rem;
         font-weight: bold;
         color: $color-seconday;
@@ -271,7 +272,12 @@ body {
                         color: #9147FF !important;
                     }
                 }
-
+                .discord{
+                    .discord-img{
+                        width: 50px;
+                        height: 40px;
+                    }
+                }
                 .instagram-icon {
                     position: relative;
                     z-index: 1000;

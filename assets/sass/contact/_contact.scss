@@ -1,0 +1,31 @@
+// first Page Styles
+$color-primary : #bc0bcc;
+$color-seconday : #C2ECF1;
+$color-tertiary : #00A8C8;
+$color-white : #e3e2df;
+$color-dark : #333;
+
+@mixin btn-styles ($font-size) {
+    outline: none;
+    font-size: $font-size;
+    font-weight: bold;
+    border-radius: .4rem;
+    background-color: transparent;
+    color: $color-seconday;
+    border: 1px solid $color-tertiary;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: $color-dark;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color-seconday;
+    border-radius: 15px;
+}

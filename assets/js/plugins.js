@@ -108,3 +108,26 @@ $('.hide-modal').click(function (e) {
         'opacity' : 1,
     }).animate({'opacity' : 0},400);
 });
+
+var Boxes = document.getElementsByClassName('card');
+var ArrayBoxes = [...Boxes];
+var targetBoxes = ArrayBoxes.slice(2,6);
+var i;
+window.addEventListener('resize',function(){
+    var getUserWidth = window.innerWidth;
+    if(getUserWidth <= 879){
+        for(i = 0 ; i<targetBoxes.length;i++){
+            targetBoxes[i].style.display = 'none';
+        }
+    }else{
+        for(i = 0 ; i<targetBoxes.length;i++){
+            targetBoxes[i].style.display = 'flex';
+        }
+    }
+});
+$('.discord').hover(function () {
+    $('.discord-img').attr('src', '../img/discord-blue.png');
+    }, function () {
+        $('.discord-img').attr('src', '../img/discord.png');
+    }
+);
