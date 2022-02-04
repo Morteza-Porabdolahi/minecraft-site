@@ -33,6 +33,9 @@
     .social-media-section-discord{
         display: none;
     }
+    .social-media-section-other{
+        width: 100%;
+    }
     .social-media-section{
         display: flex;
         justify-content: center;
@@ -58,7 +61,7 @@
         right: 0;
         left: 0;
         top: 0;
-        padding: 5.75rem 1rem;
+        padding: 6.75rem 1rem;
         z-index: 1;
     }
     .search-section{
@@ -79,6 +82,11 @@
     .down-row-header-btn{
         font-size: 1rem;
         padding: .7rem 2rem;
+    }
+    .buy-account-modal-container{
+        padding: 1rem;
+        top: 15%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 377.98px){

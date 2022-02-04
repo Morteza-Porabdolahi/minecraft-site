@@ -1,4 +1,9 @@
 @media only screen and (max-width : 946.99px){
+    .buy-account-modal-container{
+        padding: 1rem!important;
+        top: 10%!important;
+        width: 100%!important;
+    }
     .category-section-search{
         position:static!important;
     }
@@ -29,15 +34,24 @@
     .social-media-icons{
         font-size: 2rem!important;
     }
-    .discord-img{
-        width: 37px!important;
-        height: 30px!important;
-    }
-    .slider-page-img{
-        display: none;
-    }
+
     .slider-page{
         justify-content: center;
+        flex-direction: column;
+    }
+    .slider-page-img{
+        &::before{
+            height: 99%!important;
+        }
+        width: 100%!important;
+        margin-bottom: 2rem;
+    }
+    .slider-page-content{
+        width: 100%!important;
+        margin-left: 0!important;
+        h5{
+            font-size: 1.4rem!important;
+        }
     }
 }
 @media only screen and (max-width: 767.99px){
@@ -83,9 +97,6 @@
         padding: 6.75rem 1rem;
         z-index: 1;
     }
-    .search-section{
-        display: none;
-    }
     .header-list-item{
         margin: 2rem 0;
         display: block;
@@ -98,14 +109,14 @@
     .social-media-section-discord{
         display: none!important;
     }
+    .social-media-section-other{
+        width: 100%!important;
+    }
     .social-media-section{
         justify-content: center;
     }
 }
 @media only screen and (max-width:533px){
-    .slider{
-        display: none!important;
-    }
     .shop-section{
         flex-direction: column;
     }
@@ -122,5 +133,15 @@
 @media screen and (max-width : 433.98px){
     .social-media-icons{
         margin-right: 1rem!important;
+    }
+    .slider-page{
+        padding: 0 1rem!important;
+    }
+}
+@media only screen and (max-width:329.98px){
+    .slider-page-img{
+        &::before{
+            height: 98%!important;
+        }
     }
 }

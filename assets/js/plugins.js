@@ -125,9 +125,3 @@ window.addEventListener('resize',function(){
         }
     }
 });
-$('.discord').hover(function () {
-    $('.discord-img').attr('src', '../img/discord-blue.png');
-    }, function () {
-        $('.discord-img').attr('src', '../img/discord.png');
-    }
-);

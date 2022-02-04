@@ -213,7 +213,7 @@ body {
     .social-media-section {
         background-color: rgb(22, 22, 22);
         display: flex;
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
 
         &-other {
             width: calc(100% - 40%);
@@ -272,12 +272,6 @@ body {
                         color: #9147FF !important;
                     }
                 }
-                .discord{
-                    .discord-img{
-                        width: 50px;
-                        height: 40px;
-                    }
-                }
                 .instagram-icon {
                     position: relative;
                     z-index: 1000;
@@ -333,7 +327,7 @@ body {
 
         .category-section {
             width: calc(100% - 75%);
-            background-color: rgba($color: #272424, $alpha: .4);
+            background-color: rgba($color: #272424, $alpha: .8);
             position: relative;
 
             &-search {
