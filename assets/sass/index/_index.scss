@@ -48,7 +48,7 @@ body{
         justify-content: center;
         &-dialog{
             border-radius: 8px;
-            background-color: $color-dark;
+            background-color: #1f2833;
             &-header{
                 .modal-header{
                     padding: .7rem 0;
@@ -151,6 +151,7 @@ body{
 .header {
     background: url('../../img/glowing.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .image-container {

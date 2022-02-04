@@ -6,6 +6,61 @@ $color-fifth : #5A1846;
 $color-white :#fff;
 $color-dark : #1f2833;
 
+@mixin cardBtnStyles () {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: $color-white;
+    transform: scale(.97);
+    border: 1px solid $color-seconday;
+    box-shadow: none;
+    &:hover{
+        background-color: $color-seconday;
+    }
+}
+@mixin cardStyles(){
+    padding: 3rem 1rem;
+    position: relative;
+    h4{
+        font-size: 1.6rem;
+        color:#fc0047;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+        color: rgb(221, 221, 221);
+    }
+    .price{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-tertiary;
+        margin-top: 1.5rem;
+    }
+    button{
+        @include cardBtnStyles();
+    }
+    border-radius: 10px;
+    width: 50%;
+    height: 50vh;
+    border: 2px solid $color-fifth;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: $color-dark, $alpha: .94);
+        border-radius: 10px;
+        z-index: -1;
+    }
+}
 @mixin btn-styles ($font-size) {
     outline: none;
     font-size: $font-size;
@@ -170,6 +225,7 @@ body{
 .header {
     background: url('../../img/header-img-shop.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .image-container {
@@ -205,6 +261,39 @@ body{
     }
 }
 .main-container{
+    .shop-section{
+        &-container{
+            background-color: rgba($color: $color-dark, $alpha: .95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 2rem;
+            &-first-row{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .shop-box:first-child{
+                    margin-right: 4rem;
+                }
+                .shop-box{
+                    @include cardStyles();
+                    background: url('../../img/vip.png') no-repeat center;
+                    background-size: contain;
+                }
+            }
+            &-second-row{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 2rem;
+                .shop-box{
+                    @include cardStyles();
+                    background: url('../../img/vip.png') no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
     .social-media-section {
         background-color: rgb(22, 22, 22);
         display: flex;

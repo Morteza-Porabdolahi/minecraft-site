@@ -171,6 +171,7 @@ body{
 .header {
     background: url('../../img/header-img-contact.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .image-container {
@@ -200,6 +201,7 @@ body{
         padding: 1.5rem 3.5rem;
         @include btn-styles (1.3rem);
         &:hover {
+            background-color: $color-fourth;
             transform: scale(.95);
         }
     }

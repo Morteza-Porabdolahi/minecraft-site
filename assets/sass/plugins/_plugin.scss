@@ -60,7 +60,7 @@ body {
         display: flex;
         justify-content: center;
         &-dialog{
-            background-color: $color-dark;
+            background-color: #1f2833;
             border-radius: 8px;
             &-header{
                 .modal-header{
@@ -166,6 +166,7 @@ body {
 .header {
     background: url('../../img/header-img.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .image-container {
