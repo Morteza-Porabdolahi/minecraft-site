@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Mc :: Contact</title>
-    <link rel="icon" href="../img/delta.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Delta Mc :: Contact</title>
+	<link rel="icon" href="../img/delta.png">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="../js/jquery-ui-1.13.1/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset-css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/contact/contact.css">
 </head>
+
 <body>
-    <!-- Start Buy Account Modal  -->
+	<!-- Start Buy Account Modal  -->
 	<section class="buy-account-modal" id="account-buy-modal">
 		<section class="buy-account-modal-container">
 			<section class="buy-account-modal-container-dialog">
@@ -64,7 +66,7 @@
 								<a href="plugins.html" class="header-list-item-link">PLUGINS</a>
 							</li>
 							<li class="header-list-item">
-								<a href="#" class="header-list-item-link">SHOP</a>
+								<a href="shop.html" class="header-list-item-link">SHOP</a>
 							</li>
 							<li class="header-list-item">
 								<a href="contact.html" class="header-list-item-link">CONTACT</a>
@@ -84,32 +86,43 @@
 			</section>
 		</section>
 	</header>
-    <main class="main">
-        <section class="main-container">
-            <section class="contact-section">
-                <section class="contact-section-content">
-                    <h3>Contact With Us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque libero dolor laborum praesentium consequuntur deleniti soluta sit id magnam magni laudantium, at nemo aliquam ad architecto eligendi ea ipsum.</p>
-                </section>
-                <section class="contact-section-form">
-                    <form action="iman.asp" class="contact-section-form-container" id="contact-form" method="post">
-                        <input type="text" placeholder="Enter Your Name..." class="contact-section-form-container-name-input contact-section-form-container-input" id="name-input">
+	<main class="main">
+		<section class="main-container">
+			<section class="contact-section">
+				<section class="contact-section-content">
+					<h3>Contact With Us</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque libero dolor laborum
+						praesentium consequuntur deleniti soluta sit id magnam magni laudantium, at nemo aliquam ad
+						architecto eligendi ea ipsum.</p>
+				</section>
+				<section class="contact-section-form">
+					<form action="iman.asp" class="contact-section-form-container" id="contact-form" method="post">
+						<input type="text" placeholder="Enter Your Name..."
+							class="contact-section-form-container-name-input contact-section-form-container-input"
+							id="name-input">
 
 						<label class="text-danger name-input-label input-label" id="name-input-label"></label>
 
-                        <input type="text" placeholder="Enter Your Email..." class="contact-section-form-container-email-input contact-section-form-container-input" id="email-input">
+						<input type="text" placeholder="Enter Your Email..."
+							class="contact-section-form-container-email-input contact-section-form-container-input"
+							id="email-input">
 
 						<label class="text-danger name-input-label input-label" id="email-input-label"></label>
 
-                        <textarea type="text" class="contact-section-form-container-text-input contact-section-form-container-input" placeholder="Enter Your Message..." id="text-input"></textarea>
+						<textarea type="text"
+							class="contact-section-form-container-text-input contact-section-form-container-input"
+							placeholder="Enter Your Message..." id="text-input"></textarea>
 
 						<label class="text-danger name-input-label input-label" id="text-input-label"></label>
-
-                        <input class="btn btn-block contact-section-form-container-btn" type="submit">Submit</input>
-                    </form>
-                </section>
-            </section>
-            <section class="social-media-section">
+						<section class="captha-section d-flex justify-content-center">
+							<section class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW">
+							</section>
+						</section>
+						<input class="btn btn-block contact-section-form-container-btn my-3" type="submit">Submit</input>
+					</form>
+				</section>
+			</section>
+			<section class="social-media-section">
 				<section class="social-media-section-discord">
 					<iframe src="https://discord.com/widget?id=690453852494757888&theme=dark"
 						class="social-media-section-discord-iframe"></iframe>
@@ -140,8 +153,8 @@
 					</section>
 				</section>
 			</section>
-        </section>
-    </main>
+		</section>
+	</main>
 	<footer class="footer">
 		<section class="footer-container">
 			<section class="copyright">
@@ -149,9 +162,11 @@
 			</section>
 		</section>
 	</footer>
-    <script src="../js/jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="../js/jquery-ui-1.13.1/external/jquery/jquery.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/contact.js"></script>
 </body>
+
 </html>

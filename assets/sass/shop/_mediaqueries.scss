@@ -1,0 +1,79 @@
+@media only screen and (max-width:613px){
+    .social-media-section-other-header h4{
+        font-size: 1.5rem!important;
+    }
+    .social-media-icons{
+        font-size: 2rem!important;
+    }
+    .down-row-header-change-text{
+        font-size: 2.2rem!important;
+    }
+    .down-row-header-btn{
+        padding: 1rem 3rem!important;
+    }
+    .contact-section{
+        flex-direction: column;
+        &-form{
+            width: 100%!important;
+        }
+        &-content{
+            width: 100%!important;
+            margin-right: 0!important;
+            margin-bottom: 2rem;
+            h3{
+                font-size: 1.5rem!important;
+                margin-bottom: 1.1rem!important;
+                font-weight: 700;
+                color: #66fcf1;
+            }
+            p{
+                font-size: .8rem!important;
+                line-height: 1.4rem!important;
+                color: $color-white;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 564.98px){
+    .header-list{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: #000000, $alpha: 1.0);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        padding: 6.75rem 1rem;
+        z-index: 1;
+        &-item{
+            margin: 2rem 0;
+            display: block;
+        }
+    }
+    .header-icon-media{
+        position: absolute;
+        display: block;
+        z-index: 1000;
+    }
+    .social-media-section-discord{
+        display: none!important;
+    }
+    .social-media-section-other{
+        width: 100%!important;
+    }
+    .social-media-section{
+        justify-content: center;
+    }
+    .input-label{
+        font-size: .8rem!important;
+    }
+}
+@media only screen and (max-width: 880px){
+    .buy-account-modal-container{
+        padding: 1rem;
+        top: 15%;
+        width: 100%;
+    }
+}

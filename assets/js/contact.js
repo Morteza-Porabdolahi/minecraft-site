@@ -1,10 +1,11 @@
 // -------- change text -------------//
-let texts = ['C', 'Co', 'Con', 'Cont', 'Conta', 'Contac', 'Contact', 'Contact W', 'Contact Wi', 'Contact Wit', 'Contact With', 'Contact With U', 'Contact With Us', 'Contact With U', 'Contact With', 'Contact Wit', 'Contact Wi', 'Contact W', 'Contact', 'Contac', 'Conta', 'Cont', 'Con', 'Co', 'C'];
+let texts = ['C', 'Co', 'Con', 'Cont', 'Conta', 'Contac', 'Contact', 'Contact W', 'Contact Wi', 'Contact Wit', 'Contact With', 'Contact With U', 'Contact With Us'];
 let number = 0;
 let html = document.getElementById('txt-rotate');
 function txtRotate() {
     number++;
     if (number >= texts.length) {
+        texts.reverse();
         number = 0;
     }
     html.innerHTML = texts[number];
@@ -108,10 +109,7 @@ function ClearEmailInnerHtml() {
 // ---------------------TextArea Validaton-------------------- //
 $('#contact-form').submit(function (e) {
     var inputTextValue = $('#text-input').val();
-    if (specialChrac.test(inputTextValue)) {
-        FillTheTextArea();
-        return false;
-    } else if(inputTextValue.length == 0){
+    if(inputTextValue.length == 0){
         FillTheTextArea();
         return false;
     }else{

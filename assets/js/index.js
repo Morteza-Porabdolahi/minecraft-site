@@ -1,12 +1,13 @@
 $(document).ready(function() {
     // -------- change text -------------//
-    let texts = ['D', 'De', 'Del', 'Delt', 'Delta', 'Delta M', 'Delta Mi', 'Delta Min', 'Delta Mine', 'Delta Minec', 'Delta Minecr', 'Delta Minecra', 'Delta Minecraf', 'Delta Minecraft', 'Delta Minecraft S', 'Delta Minecraft Se', 'Delta Minecraft Ser', 'Delta Minecraft Serv', 'Delta Minecraft Serve', 'Delta Minecraft Server', 'Delta Minecraft Serve', 'Delta Minecraft Serv', 'Delta Minecraft Ser', 'Delta Minecraft Se', 'Delta Minecraft S', 'Delta Minecraft', 'Delta Minecraf', 'Delta Minecra', 'Delta Minecr', 'Delta Minec', 'Delta Mine', 'Delta Min', 'Delta Mi', 'Delta M', 'Delta', 'Delt', 'Del', 'De', 'D'];
+    let texts = ['D', 'De', 'Del', 'Delt', 'Delta', 'Delta M', 'Delta Mi', 'Delta Min', 'Delta Mine', 'Delta Minec', 'Delta Minecr', 'Delta Minecra', 'Delta Minecraf', 'Delta Minecraft', 'Delta Minecraft S', 'Delta Minecraft Se', 'Delta Minecraft Ser', 'Delta Minecraft Serv', 'Delta Minecraft Serve', 'Delta Minecraft Server'];
     let number = 0;
     let html = document.getElementById('txt-rotate');
 
     function txtRotate() {
         number++;
         if (number >= texts.length) {
+            texts.reverse();
             number = 0;
         }
         html.innerHTML = texts[number];
