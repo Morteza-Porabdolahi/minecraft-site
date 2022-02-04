@@ -16,9 +16,11 @@ $(document).ready(function () {
     $('#burger-menu').click(function (e) {
         $('.header-list').toggleClass('flex');
         if ($('.header-list').hasClass('flex')) {
-            $('.burger').addClass('fa-times');
+            $('.burger').addClass('zmdi-sort-amount-asc');
+            $('.burger').removeClass('zmdi-menu');
         } else {
-            $('.burger').addClass('fa-bars');
+            $('.burger').addClass('zmdi-menu');
+            $('.burger').removeClass('zmdi-sort-amount-asc');
         }
     });
     // -----------------------------------------//

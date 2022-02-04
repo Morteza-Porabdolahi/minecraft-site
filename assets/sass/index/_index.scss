@@ -220,11 +220,6 @@ body{
         color: $color-seconday;
         background-color: #1a1a1d;
         position: relative;
-
-        &:focus+button {
-            background-color: $color-tertiary;
-        }
-
         &:focus::placeholder {
             color: $color-seconday;
             transition: all .3s;
@@ -451,27 +446,6 @@ body{
     align-items: center;
     padding: 6rem 0;
     background-color: rgba($color: #000000, $alpha: .9);
-
-    .search-history {
-        &-header h5 {
-            color: $color-seconday;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        &-header {
-            margin-bottom: 1rem;
-        }
-
-        .history-list-item {
-            color: $color-seconday;
-        }
-
-        .history-list-item::marker {
-            color: rgb(114, 114, 114);
-        }
-    }
-
     .copyright {
         margin-top: 2rem;
 

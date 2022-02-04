@@ -4,10 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact/contact.css">
-    <title>Document</title>
+    <title>Delta Mc :: Contact</title>
+    <link rel="icon" href="../img/delta.png">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../js/jquery-ui-1.13.1/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset-css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact/contact.css">
 </head>
 <body>
-    
+    <!-- Start Buy Account Modal  -->
+	<section class="buy-account-modal" id="account-buy-modal">
+		<section class="buy-account-modal-container">
+			<section class="buy-account-modal-container-dialog">
+				<section class="buy-account-modal-container-dialog-header">
+					<section class="modal-header d-flex align-items-center justify-content-between px-4">
+						<h3>Buy Account</h3>
+						<button class="btn btn-danger hide-modal"><span>&times;</span></button>
+					</section>
+				</section>
+				<section class="buy-account-modal-container-dialog-body">
+					<section class="modal-body d-flex align-items-center justify-content-center">
+						<p>For Purchasing Accout Click The Link Below <br><a href="#">zarinpal.ir</a></p>
+					</section>
+				</section>
+				<section class="buy-account-modal-container-dialog-footer">
+					<section class="modal-footer d-flex align-items-center justify-content-center">
+						<button class="close-modal btn btn-danger hide-modal">
+							Close
+						</button>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<!-- End Buy Account Modal  -->
+	<!-- Scroll To Top -->
+	<section class="scroll-top">
+		<section class="scroll-top-container" id="scroll-top-button">
+			<span class="scroll-top-icon pointer">
+				<i class="zmdi zmdi-long-arrow-up"></i>
+			</span>
+		</section>
+	</section>
+	<!-- End Scroll To Top -->
+
+	<header class="header">
+		<section class="header-container">
+			<section class="up-row-header">
+				<section class="image-container">
+					<img src="../img/delta.png" alt="logo" class="img-fluid logo pointer">
+				</section>
+				<section class="navbar-container">
+					<nav>
+						<ul class="header-list">
+							<li class="header-list-item">
+								<a href="../../index.html" class="header-list-item-link">HOME</a>
+							</li>
+							<li class="header-list-item">
+								<a href="plugins.html" class="header-list-item-link">PLUGINS</a>
+							</li>
+							<li class="header-list-item">
+								<a href="#" class="header-list-item-link">SHOP</a>
+							</li>
+							<li class="header-list-item">
+								<a href="contact.html" class="header-list-item-link">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+					<section class="header-icon-media">
+						<a href="#" class="header-list-item-link" id="burger-menu">
+							<i class="zmdi zmdi-menu burger"></i>
+						</a>
+					</section>
+				</section>
+			</section>
+			<section class="down-row-header">
+				<h5 class="down-row-header-change-text" id="txt-rotate"></h5>
+				<button class="down-row-header-btn pointer" id="account-buy-btn">Buy Account</button>
+			</section>
+		</section>
+	</header>
+    <main class="main">
+        <section class="main-container">
+            <section class="contact-section">
+                <section class="contact-section-content">
+                    <h3>Contact With Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque libero dolor laborum praesentium consequuntur deleniti soluta sit id magnam magni laudantium, at nemo aliquam ad architecto eligendi ea ipsum.</p>
+                </section>
+                <section class="contact-section-form">
+                    <form action="iman.asp" class="contact-section-form-container" id="contact-form" method="post">
+                        <input type="text" placeholder="Enter Your Name..." class="contact-section-form-container-name-input contact-section-form-container-input" id="name-input">
+
+						<label class="text-danger name-input-label input-label" id="name-input-label"></label>
+
+                        <input type="text" placeholder="Enter Your Email..." class="contact-section-form-container-email-input contact-section-form-container-input" id="email-input">
+
+						<label class="text-danger name-input-label input-label" id="email-input-label"></label>
+
+                        <textarea type="text" class="contact-section-form-container-text-input contact-section-form-container-input" placeholder="Enter Your Message..." id="text-input"></textarea>
+
+						<label class="text-danger name-input-label input-label" id="text-input-label"></label>
+
+                        <input class="btn btn-block contact-section-form-container-btn" type="submit">Submit</input>
+                    </form>
+                </section>
+            </section>
+            <section class="social-media-section">
+				<section class="social-media-section-discord">
+					<iframe src="https://discord.com/widget?id=690453852494757888&theme=dark"
+						class="social-media-section-discord-iframe"></iframe>
+				</section>
+				<section class="social-media-section-other">
+					<section class="social-media-section-other-header">
+						<h4>Follow us On Social Media !</h4>
+					</section>
+					<section class="social-media-section-other-icons">
+						<secion class="instagram">
+							<a class="social-media-icons instagram-icon pointer"
+								href="https://www.instagram.com/mr._.hichy/" target="_blank">
+								<i class="zmdi zmdi-instagram"></i>
+							</a>
+						</secion>
+						<section class="twitch">
+							<a class="social-media-icons twitch-icon pointer" href="https://www.twitch.tv/mrhichy"
+								target="_blank">
+								<i class="zmdi zmdi-twitch"></i>
+							</a>
+						</section>
+						<section class="youtube">
+							<a class="social-media-icons youtube-icon pointer" href="https://www.youtube.com/mrhichy"
+								target="_blank">
+								<i class="zmdi zmdi-youtube-play"></i>
+							</a>
+						</section>
+					</section>
+				</section>
+			</section>
+        </section>
+    </main>
+	<footer class="footer">
+		<section class="footer-container">
+			<section class="copyright">
+				<h6 class="copyright-text">Copyright &COPY; 2022 All rihgts reserved</h6>
+			</section>
+		</section>
+	</footer>
+    <script src="../js/jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/contact.js"></script>
 </body>
 </html>
