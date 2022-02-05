@@ -7,9 +7,7 @@ $color-white :#fff;
 $color-dark : #1f2833;
 
 @mixin cardBtnStyles () {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
+    margin-top: 2rem;
     font-size: 1.3rem;
     background-color: transparent;
     color: $color-white;
@@ -225,7 +223,6 @@ body{
 .header {
     background: url('../../img/header-img-shop.jpg') no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .image-container {
