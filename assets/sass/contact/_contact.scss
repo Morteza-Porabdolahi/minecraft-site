@@ -111,7 +111,7 @@ body{
         .scroll-top-icon {
             background-color: $color-white;
             border-radius: 50%;
-            padding: .4rem 1rem;
+            padding: .4rem .6rem;
             color: $color-dark;
             font-size: 2rem;
 
@@ -212,7 +212,7 @@ body{
         padding: 2rem .5rem;
 
         &-other {
-            width: calc(100% - 40%);
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -248,7 +248,15 @@ body{
 
             &-icons {
                 display: flex;
-
+                .discord{
+                    .discord-icon {
+                        transition: all .3s;
+                        color: #fff !important;
+                        &:hover {
+                            color: #5865F2 !important;
+                        }
+                    }
+                }
                 .youtube-icon {
                     transition: all .3s;
                     color: #fff !important;
@@ -282,7 +290,7 @@ body{
                         content: '';
                         z-index: -1;
                         width: 0%;
-                        height: 70%;
+                        height: 73%;
                         position: absolute;
                         border-radius: 20%;
                         top: 6px;

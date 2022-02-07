@@ -1,32 +1,4 @@
-@import url('../../material-design-iconic-font/css/material-design-iconic-font.min.css');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial;
-}
-.pointer{
-    cursor: pointer;
-}
 .active{
     border : 1px solid #C2ECF1;
     background-color: #00A8C8;
-}
-.flex{
-    display: flex!important;
-}
-a{
-    text-decoration: none;
-    transition: all .3s;
-    &:hover{
-        text-decoration: none;
-    }
-}
-p{
-    padding: 0 .4rem;
-}
-h1,h2,h3,h4,h5,h6,a,p{
-    text-align: center;
 }

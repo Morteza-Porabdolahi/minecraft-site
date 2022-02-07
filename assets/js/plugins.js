@@ -13,17 +13,6 @@ $(document).ready(function () {
         html.innerHTML = texts[number];
     }
     setInterval(txtRotate, 300);
-    // ----------------- menu ---------------- //
-    $('#burger-menu').click(function (e) {
-        $('.header-list').toggleClass('flex');
-        if ($('.header-list').hasClass('flex')) {
-            $('.burger').addClass('zmdi-sort-amount-asc');
-            $('.burger').removeClass('zmdi-menu');
-        } else {
-            $('.burger').addClass('zmdi-menu');
-            $('.burger').removeClass('zmdi-sort-amount-asc');
-        }
-    });
     // -----------------------------------------//
     let nextSlidetButton = document.getElementById('next-btn');
     let prevSlideButton = document.getElementById('prev-btn');
@@ -65,51 +54,23 @@ $(document).ready(function () {
 $('.category-toggle').on('click',function (e) { 
     var hasClass = $(this).hasClass('category-toggle-active');
     $('.category-toggle').removeClass('category-toggle-active');
-    $('.category-toggle').children('.angle').addClass('zmdi-chevron-right');
-    $('.category-toggle').children('.angle').removeClass('zmdi-chevron-down');
+    $('.category-toggle').children('.angle').addClass('bi-chevron-double-right');
+    $('.category-toggle').children('.angle').removeClass('bi-chevron-double-down');
     if(hasClass){
         $(this).removeClass('category-toggle-active');
-        $(this).children('.angle').addClass('zmdi-chevron-right');
-        $(this).children('.angle').removeClass('zmdi-chevron-down');
+        $(this).children('.angle').addClass('bi-chevron-double-right');
+        $(this).children('.angle').removeClass('bi-chevron-double-down');
         $('.category-section-search').css({
             'padding' : '6.55rem 1rem',
         });
     }else{
         $(this).addClass('category-toggle-active');
-        $(this).children('.angle').removeClass('zmdi-chevron-right');
-        $(this).children('.angle').addClass('zmdi-chevron-down');
+        $(this).children('.angle').removeClass('bi-chevron-double-right');
+        $(this).children('.angle').addClass('bi-chevron-double-down');
         $('.category-section-search').css({
             'padding' : '1.2rem 1rem',
         });
     }
-});
-var backToTopButton = document.getElementById('scroll-top-button');
-window.onscroll = function styleButton () {
-    if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70){
-        backToTopButton.style.display = 'block';
-    }else{
-        backToTopButton.style.display = 'none';
-    }
-}
-backToTopButton.addEventListener('click',function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-});
-$('#account-buy-btn').click(function (e) { 
-    $('body').css({'overflow' : 'hidden'});
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    $('#account-buy-modal').css({
-        'display' : 'flex',
-        'opacity' : 0,
-    }).animate({'opacity' : 1},200);
-});
-$('.hide-modal').click(function (e) { 
-    $('body').css({'overflow' : 'auto'});
-    $('#account-buy-modal').css({
-        'display' : 'none',
-        'opacity' : 1,
-    }).animate({'opacity' : 0},400);
 });
 
 var Boxes = document.getElementsByClassName('card');

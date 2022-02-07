@@ -58,7 +58,7 @@ body{
     &-container{
         position: absolute;
         z-index: 10000;
-        top: 10%;
+        top: 12%;
         left: 50%;
         transform: translate(-50%,-50%);
         display: flex;
@@ -110,7 +110,7 @@ body{
         .scroll-top-icon {
             background-color: $color-white;
             border-radius: 50%;
-            padding: .4rem 1rem;
+            padding: .4rem .6rem;
             color: $color-dark;
             font-size: 2rem;
 
@@ -209,10 +209,10 @@ body{
     .social-media-section {
         background-color: rgb(22, 22, 22);
         display: flex;
-        padding: 2rem .5rem;
+        padding: 4rem .5rem;
 
         &-other {
-            width: calc(100% - 40%);
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -248,7 +248,14 @@ body{
 
             &-icons {
                 display: flex;
-
+                .discord-icon {
+                    transition: all .3s;
+                    color: #fff !important;
+    
+                    &:hover {
+                        color: #5865F2 !important;
+                    }
+                }
                 .youtube-icon {
                     transition: all .3s;
                     color: #fff !important;
@@ -282,7 +289,7 @@ body{
                         content: '';
                         z-index: -1;
                         width: 0%;
-                        height: 70%;
+                        height: 73%;
                         position: absolute;
                         border-radius: 20%;
                         top: 6px;
@@ -297,28 +304,13 @@ body{
                 }
             }
         }
-
-        &-discord {
-            margin-right: 1rem;
-            width: 40%;
-            display: flex;
-            justify-content: center;
-
-            &-iframe {
-                width: 100%;
-                border-radius: 1px;
-                border: none;
-                outline: none;
-                height: 23rem;
-            }
-        }
     }
     .vote-section{
         &-container{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $color-dark;
+            background-color: $color-primary;
             padding: 2rem 1rem;
             &-body{
                 display: flex;
