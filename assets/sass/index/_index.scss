@@ -20,6 +20,58 @@ body::-webkit-scrollbar-thumb {
 body{
     position: relative;
 }
+.loading-page{
+    &-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba($color: #000000, $alpha: 1);
+        z-index: 1000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .circle{
+            width: auto;
+            margin: 2rem 2rem;
+            border: 5px solid $color-tertiary;
+            border-radius: 50%;
+            padding: 15rem 10rem;
+            transition: all .3s;
+            animation: border-color 2s alternate infinite;
+            @keyframes border-color {
+                0%{
+                    border-color: $color-tertiary;
+                }
+                50%{
+                    border-color: $color-seconday;
+                }
+                100%{
+                    border-color: $color-primary;
+                }
+            }
+            h2{
+                font-size: 5rem;
+                color: $color-seconday;
+                font-weight: 600;
+                animation: color 2s alternate infinite;
+                @keyframes color {
+                    0%{
+                        letter-spacing: 1rem;
+                        color: $color-tertiary;
+                    }
+                    50%{
+                        color: $color-seconday;
+                    }
+                    100%{
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
 .buy-account-modal{
     display: none;
     align-items: center;

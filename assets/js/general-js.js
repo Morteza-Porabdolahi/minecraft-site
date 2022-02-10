@@ -46,3 +46,20 @@ $('.hide-modal').click(function (e) {
         'opacity': 1,
     }).animate({ 'opacity': 0 }, 400);
 });
+// ---------------- //
+function scrollToTopForLoading() {
+    const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    $('body').css({ 'overflow': 'hidden' });
+    if (scroll > 0) {
+        window.requestAnimationFrame(scrollToTopForLoading);
+        window.scrollTo(0, scroll - scroll / 8);
+        $('body').css({ 'overflow': 'hidden' });
+    }
+}
+window.addEventListener('load', () => {
+    scrollToTopForLoading();
+    setTimeout(() => {
+        $('.loading-page').css({'display':'none'});
+        $('body').css({'overflow':'auto'});
+    }, 4500);   
+});
