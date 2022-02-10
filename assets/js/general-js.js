@@ -17,9 +17,15 @@ window.onscroll = function styleButton() {
         backToTopButton.style.display = 'none';
     }
 }
-backToTopButton.addEventListener('click', function () {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+function scrollToTop () {
+    const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scroll > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, scroll - scroll / 8);
+    }
+}
+backToTopButton.addEventListener('click',function () {
+    scrollToTop();
 });
 // -------------------------------- //
 $('#account-buy-btn').click(function (e) {
