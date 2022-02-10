@@ -53,7 +53,6 @@ function scrollToTopForLoading() {
     if (scroll > 0) {
         window.requestAnimationFrame(scrollToTopForLoading);
         window.scrollTo(0, scroll - scroll / 8);
-        $('body').css({ 'overflow': 'hidden' });
     }
 }
 window.addEventListener('load', () => {

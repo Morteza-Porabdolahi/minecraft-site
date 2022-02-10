@@ -19,6 +19,7 @@ body::-webkit-scrollbar-thumb {
 }
 body{
     position: relative;
+    overflow: hidden;
 }
 .loading-page{
     &-container{
