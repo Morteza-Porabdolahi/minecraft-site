@@ -60,5 +60,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         $('.loading-page').css({'display':'none'});
         $('body').css({'overflow':'auto'});
-    }, 4500);   
+    }, 1000);   
 });
