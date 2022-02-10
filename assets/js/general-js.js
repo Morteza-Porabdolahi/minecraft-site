@@ -17,15 +17,16 @@ window.onscroll = function styleButton() {
         backToTopButton.style.display = 'none';
     }
 }
-function scrollToTop () {
+function scrollToTop() {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     if (scroll > 0) {
         window.requestAnimationFrame(scrollToTop);
         window.scrollTo(0, scroll - scroll / 8);
     }
 }
-backToTopButton.addEventListener('click',function () {
+backToTopButton.addEventListener('click', function () {
     scrollToTop();
+    $('body').css({ 'overflow': 'hidden' });
 });
 // -------------------------------- //
 $('#account-buy-btn').click(function (e) {
