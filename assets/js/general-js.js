@@ -19,14 +19,15 @@ window.onscroll = function styleButton() {
 }
 function scrollToTop() {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    $('body').css({ 'overflow': 'auto' });
     if (scroll > 0) {
         window.requestAnimationFrame(scrollToTop);
         window.scrollTo(0, scroll - scroll / 8);
+        $('body').css({ 'overflow': 'hidden' });
     }
 }
 backToTopButton.addEventListener('click', function () {
     scrollToTop();
-    $('body').css({ 'overflow': 'hidden' });
 });
 // -------------------------------- //
 $('#account-buy-btn').click(function (e) {
