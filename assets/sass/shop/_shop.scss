@@ -19,7 +19,7 @@ $color-dark : #1f2833;
     }
 }
 @mixin cardStyles(){
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
     position: relative;
     h4{
         font-size: 1.6rem;
@@ -42,7 +42,6 @@ $color-dark : #1f2833;
     }
     border-radius: 10px;
     width: 50%;
-    height: 50vh;
     border: 2px solid $color-fifth;
     position: relative;
     z-index: 1;

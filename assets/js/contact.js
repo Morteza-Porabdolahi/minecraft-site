@@ -12,6 +12,11 @@ function txtRotate() {
 }
 setInterval(txtRotate, 400);
 //------------------Name Input Validaton------------------//
+document.getElementById('name-input').addEventListener('keypress', e => {
+    if(e.key == ' '){
+        e.preventDefault();
+    }
+});
 var specialChrac = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 $('#contact-form').submit(function (e) {
     var inputNameValue = $('#name-input').val().toLowerCase();
@@ -43,6 +48,11 @@ function FillTheInput() {
     InputNameLabel.innerHTML = "Please Fill Out The Field !";
 }
 // ----------------- Email Input Validaton------------------------ //
+document.getElementById('email-input').addEventListener('keypress', e => {
+    if(e.key == ' '){
+        e.preventDefault();
+    }
+});
 $('#contact-form').submit(function (e) {
     var inputEmailValue = $('#email-input').val().toLowerCase();
     var EmailCharacs = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

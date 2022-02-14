@@ -51,41 +51,46 @@ $(document).ready(function () {
     });
 });
 //------------- Category Dropdown ----------------//
-$('.category-toggle').on('click',function (e) { 
+$('.category-toggle').on('click', function (e) {
     var hasClass = $(this).hasClass('category-toggle-active');
     $('.category-toggle').removeClass('category-toggle-active');
     $('.category-toggle').children('.angle').addClass('bi-chevron-double-right');
     $('.category-toggle').children('.angle').removeClass('bi-chevron-double-down');
-    if(hasClass){
+    if (hasClass) {
         $(this).removeClass('category-toggle-active');
         $(this).children('.angle').addClass('bi-chevron-double-right');
         $(this).children('.angle').removeClass('bi-chevron-double-down');
         $('.category-section-search').css({
-            'padding' : '6.55rem 1rem',
+            'padding': '6.55rem 1rem',
         });
-    }else{
+    } else {
         $(this).addClass('category-toggle-active');
         $(this).children('.angle').removeClass('bi-chevron-double-right');
         $(this).children('.angle').addClass('bi-chevron-double-down');
         $('.category-section-search').css({
-            'padding' : '1.2rem 1rem',
+            'padding': '1.2rem 1rem',
         });
     }
 });
 
 var Boxes = document.getElementsByClassName('card');
 var ArrayBoxes = [...Boxes];
-var targetBoxes = ArrayBoxes.slice(2,6);
+var targetBoxes = ArrayBoxes.slice(2, 6);
 var i;
-window.addEventListener('resize',function(){
+window.addEventListener('resize', function () {
     var getUserWidth = window.innerWidth;
-    if(getUserWidth <= 879){
-        for(i = 0 ; i<targetBoxes.length;i++){
+    if (getUserWidth <= 879) {
+        for (i = 0; i < targetBoxes.length; i++) {
             targetBoxes[i].style.display = 'none';
         }
-    }else{
-        for(i = 0 ; i<targetBoxes.length;i++){
+    } else {
+        for (i = 0; i < targetBoxes.length; i++) {
             targetBoxes[i].style.display = 'flex';
         }
     }
 });
+document.getElementById('search').addEventListener('keypress', e => {
+    if(e.key == ' '){
+        e.preventDefault();
+    }
+}); 

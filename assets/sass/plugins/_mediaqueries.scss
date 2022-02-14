@@ -83,7 +83,7 @@
         font-size: 1.2rem!important;
     }
 } 
-@media only screen and (max-width: 564.98px){
+@media only screen and (max-width: 628.98px){
     .header-list{
         display: none;
         flex-direction: column;
@@ -106,15 +106,6 @@
         display: block;
         z-index: 1000;
     }
-    .social-media-section-discord{
-        display: none!important;
-    }
-    .social-media-section-other{
-        width: 100%!important;
-    }
-    .social-media-section{
-        justify-content: center;
-    }
 }
 @media only screen and (max-width:533px){
     .shop-section{
@@ -135,7 +126,7 @@
         margin-right: 1rem!important;
     }
     .slider-page{
-        padding: 0 1rem!important;
+        padding: 0 2rem!important;
     }
 }
 @media only screen and (max-width:329.98px){

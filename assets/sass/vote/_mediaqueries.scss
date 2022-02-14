@@ -12,7 +12,7 @@
         padding: 1rem 3rem!important;
     }
 }
-@media only screen and (max-width: 564.98px){
+@media only screen and (max-width: 628.99px){
     .header-list{
         display: none;
         flex-direction: column;
@@ -34,15 +34,6 @@
         position: absolute;
         display: block;
         z-index: 1000;
-    }
-    .social-media-section-discord{
-        display: none!important;
-    }
-    .social-media-section-other{
-        width: 100%!important;
-    }
-    .social-media-section{
-        justify-content: center;
     }
 }
 @media only screen and (max-width: 880px){
