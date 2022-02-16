@@ -141,7 +141,8 @@ body{
         bottom: 2rem;
         right: 2rem;
         z-index: 100000;
-        display: none;
+        transition: all .3s;
+        opacity: 0;
         .scroll-top-icon{
             background-color: $color-white;
             border-radius: 50%;
@@ -241,7 +242,6 @@ body{
         color: $color-seconday;
         border: 1px solid $color-tertiary;
         transition: all .4s;
-
         &:hover {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             transform: scale(.98);
@@ -265,8 +265,16 @@ body{
     .input-section {
         position: relative;
         width: calc(100% / 3);
+        z-index: 1;
     }
-
+    &-place-holder{
+        color: $color-seconday;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        transition: all .3s;
+        z-index: 0;
+    }
     &-input {
         border: none;
         outline: none;
@@ -275,10 +283,22 @@ body{
         padding: .4rem .2rem;
         color: $color-seconday;
         background-color: #1a1a1d;
-        position: relative;
-        &:focus::placeholder {
-            color: $color-seconday;
-            transition: all .3s;
+        font-size: 1.2rem;
+        animation : border-color 2s infinite alternate;
+        @keyframes border-color {
+            0%{
+                border-color:$color-tertiary;
+            }
+            50%{
+                border-color:$color-seconday;
+            }
+            100%{
+                border-color:$color-primary;
+            }
+        }
+        &:focus + span {
+            color: rgb(107, 107, 107);
+            transform: translate(-4px,-25px);
         }
     }
 
