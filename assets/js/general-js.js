@@ -11,18 +11,18 @@ $('#burger-menu').click(function (e) {
 // -------------------------------- //
 var backToTopButton = document.getElementById('scroll-top-button');
 window.onscroll = function styleButton() {
-    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-        backToTopButton.style.display = 'block';
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        backToTopButton.style.opacity = '1';
     } else {
-        backToTopButton.style.display = 'none';
+        backToTopButton.style.opacity = '0';
     }
 }
 function scrollToTop() {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     $('body').css({ 'overflow': 'auto' });
-    if (scroll > 0) {
+    if (scroll > 0 && backToTopButton.style.opacity == 1) {
         window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, scroll - scroll / 8);
+        window.scrollTo({top : 0}, scroll - scroll / 8);
         $('body').css({ 'overflow': 'hidden' });
     }
 }
