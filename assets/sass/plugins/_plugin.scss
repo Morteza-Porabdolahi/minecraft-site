@@ -569,18 +569,7 @@ body {
                         }
 
                         .discount {
-                            &::before {
-                                content: '';
-                                display: block;
-                                background-color: $color-white;
-                                width: 110px;
-                                height: 1px;
-                                position: absolute;
-                                top: 50%;
-                                left: 20%;
-                                transform: rotate(-0deg);
-                                transform-origin: center;
-                            }
+                            text-decoration: line-through;
                         }
 
                         h5 {

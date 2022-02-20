@@ -17,13 +17,13 @@ document.getElementById('name-input').addEventListener('keypress', e => {
         e.preventDefault();
     }
 });
-var specialChrac = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+var specialChrac = /^[a-zA-Z]{5,10}$/;
 $('#contact-form').submit(function (e) {
     var inputNameValue = $('#name-input').val().toLowerCase();
     if ((/\d+/g.test(inputNameValue))) {
         dontUseNumbers();
         return false;
-    } else if ((specialChrac.test(inputNameValue))) {
+    } else if ((!specialChrac.test(inputNameValue))) {
         dontUseSpecial();
         return false;
     } else if (inputNameValue.length == 0) {
@@ -42,7 +42,7 @@ function ClearInnerHtml() {
     InputNameLabel.innerHTML = "";
 }
 function dontUseSpecial() {
-    InputNameLabel.innerHTML = "Please Don't Use Special Charachters !";
+    InputNameLabel.innerHTML = "Please Don't Use Special Charachters And Name Chracters Must Between (5,10)!";
 }
 function FillTheInput() {
     InputNameLabel.innerHTML = "Please Fill Out The Field !";
